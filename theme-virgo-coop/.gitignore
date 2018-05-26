@@ -1,0 +1,12 @@
+.DS_STORE
+.DS_Store
+.Trash*
+
+*.log*
+*.sql
+
+node_modules
+npm-debug.log
+dist
+.vscode
+

@@ -20,10 +20,7 @@ services:
       DB_NAME: wordpress
       DB_PASS: root
       PLUGINS: >-
-        academic-bloggers-toolkit
-        co-authors-plus
-        [WP-API]https://github.com/WP-API/WP-API/archive/master.zip
-        ari-adminer
+        [wp-graphql]https://github.com/wp-graphql/wp-graphql/archive/v0.0.29.zip
 
   db:
     image: mariadb:10  # or mysql:5.7

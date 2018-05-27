@@ -31,4 +31,5 @@ API fetching ?
 
 - utilisation de GraphQL, via plugin https://github.com/wp-graphql/wp-graphql pour simplifier les payloads
 - utilisation de Relay, vu que l'endpoint GraphQL exposé est Relay-compliant via https://github.com/ivome/graphql-relay-php/
+- pour tester graphql : https://github.com/skevy/graphiql-app + `ngrok http 8080` pour taper sur http://localhost:8080/graphql
 

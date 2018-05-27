@@ -7,4 +7,6 @@ import 'Styles/index.scss';
 
 const node = document.getElementById('root');
 
-render(<App />, node);
+document.addEventListener('DOMContentLoaded', () => {
+  render(<App />, node);
+});

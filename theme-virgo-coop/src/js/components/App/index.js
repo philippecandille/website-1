@@ -1,7 +1,11 @@
 import React from 'react';
 
+import Posts from 'src/containers/Posts';
+
 const App = () => (
-  <div className="virgo">Hello Virgo :)</div>
+  <div className="app-virgo">
+    <Posts />
+  </div>
 );
 
 export default App;

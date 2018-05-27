@@ -22,3 +22,13 @@ Application React isomorphique dans un contexte WP-REST-API ?
 - du coup, isomorphique « pur » => pre-rendering de la route demandée (Node.js) pour la SEO
 - si isomorphique « pur » trop chiant, on peut imaginer un contenu statique optimisé pour la SEO, mais non-affiché, et garder une SPA classique à l'affichage (loading async de la route demandée). Le contenu statique serait alors toujours le même, quelle que soit la route demandée (ie. utiliser le fallback contenu de WordPress pour servir cette version SEO-aware statique, quelle que soit l'url)
 - coté client, utilisation de React-Router + Redux (middleware) pour charger le contenu depuis l'API REST de WordPress, en fonction de la route
+
+Routage ?
+
+- bypasser le routage WP avec React-Router, pour toujours charger /
+
+API fetching ?
+
+- utilisation de GraphQL, via plugin https://github.com/wp-graphql/wp-graphql pour simplifier les payloads
+- utilisation de Relay, vu que l'endpoint GraphQL exposé est Relay-compliant via https://github.com/ivome/graphql-relay-php/
+

@@ -4,17 +4,19 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const theme = path.basename(__dirname);
 
 module.exports = {
-  entry: './src/js/index.js',
+  context: path.resolve(__dirname, 'src/'),
+  entry: './js/index.js',
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, '.'),
-    publicPath: `wp-content/themes/${theme}`
+    publicPath: `wp-content/themes/${theme}/`
   },
   resolve: {
     alias: {
-      Components: path.resolve(__dirname, 'src/js/components'),
-      Styles: path.resolve(__dirname, 'src/styles')
-    }
+      src: path.resolve(__dirname, 'src/js'),
+      styles: path.resolve(__dirname, 'src/styles')
+    },
+    extensions: [".js", ".json", ".scss"]
   },
   plugins: [
     new MiniCssExtractPlugin({

@@ -2,8 +2,8 @@ import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom'
 
-import App from 'Components/App';
-import 'Styles/index.scss';
+import App from 'src/components/App';
+import 'styles';
 
 const node = document.getElementById('root');
 

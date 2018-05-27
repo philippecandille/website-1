@@ -10,6 +10,12 @@ module.exports = {
     path: path.resolve(__dirname, '.'),
     publicPath: `wp-content/themes/${theme}`
   },
+  resolve: {
+    alias: {
+      Components: path.resolve(__dirname, 'src/js/components'),
+      Styles: path.resolve(__dirname, 'src/styles')
+    }
+  },
   plugins: [
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
